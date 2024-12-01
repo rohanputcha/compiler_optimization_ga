@@ -126,7 +126,13 @@ def rewards(env, initial_rt, initial_ic, inital_auto):
    
 
 # Helper function: Mutate an individual
-#def mutation(individual: List[str]):
+def mutate(individual: List[str]) -> List[str]:
+    mutated_individual = individual.copy()
+    for i in range(len(mutated_individual)):
+        if random.random() < FLAGS.mutation_rate:
+            mutated_individual[i] = random.choice(FLAGS.flags)
+    return mutated_individual
+
 
 # Genetic Algorithm Implementation
 #def genetic_algorithm(env):
