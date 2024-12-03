@@ -39,7 +39,7 @@ flags.DEFINE_list(
         "-correlated-propagation",
         "-cross-dso-cfi",
         "-deadargelim",
-        "-dead-store-elimination",
+        "-dse",
         "-reg2mem",
         "-div-rem-pairs",
         "-early-cse-memssa",
@@ -136,11 +136,11 @@ flags.DEFINE_list(
     "List of optimizations to explore.",
 )
 flags.DEFINE_integer("population_size", 10, "Number of individuals in the population.")
-flags.DEFINE_integer("generation_count", 16, "Number of generations to evolve.")
+flags.DEFINE_integer("generation_count", 15, "Number of generations to evolve.")
 flags.DEFINE_integer("episode_len", 5, "Length of each sequence of optimizations.")
 flags.DEFINE_float("mutation_rate", .1, "Probability of mutation.")
 flags.DEFINE_float("crossover_rate", .8, "Probability of crossover.")
-flags.DEFINE_integer("iterations", 6, "Training")
+flags.DEFINE_integer("iterations", 3, "Training")
 
 
 FLAGS = flags.FLAGS
@@ -151,7 +151,6 @@ def evaluate_fitness(env, individual: List[str]) -> float:
     initial_ic = env.observation["IrInstructionCount"]
     initial_rt = env.observation["Runtime"][0]
     initial_auto = env.observation["Autophase"][51]
-
     for action in individual:
         action_index = env.action_space.flags.index(action)
         observation, reward, done, info = env.step(action_index)
@@ -231,12 +230,12 @@ def main(argv):
     #env.reset() 
 
     #if using benchmarks
-    benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
+    #benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
+    benchmarks = ["benchmark://cbench-v1/crc32"] #add additional
 
     for benchmark in benchmarks:
         print(f"Running Benchmark: {benchmark}")
         env.reset(benchmark=benchmark)
-        print(next(env.datasets.benchmark_uris()))
     
         print(f"Episode length: {FLAGS.episode_len}")
         print(f"Population Size: {FLAGS.population_size}")

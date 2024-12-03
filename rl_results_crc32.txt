@@ -1,0 +1,94 @@
+Running Benchmark: benchmark://cbench-v1/crc32
+Seed: 204
+Episode length: 5
+Number of episodes: 60
+Observations: Runtime, IR Instruction Count, Autophase Instruction Count
+Benchmark: None
+Action space: Commandline([-add-discriminators -adce -loop-unroll -loop-unswitch -loop-vectorize -aggressive-instcombine -alignment-from-assumptions -always-inline -argpromotion -attributor -barrier -bdce -loop-instsimplify -break-crit-edges -simplifycfg -dce -called-value-propagation -die -canonicalize-aliases -consthoist -constmerge -constprop -coro-cleanup -coro-early -coro-elide -coro-split -correlated-propagation -cross-dso-cfi -deadargelim -dse -reg2mem -div-rem-pairs -early-cse-memssa -elim-avail-extern -ee-instrument -flattencfg -float2int -forceattrs -inline -insert-gcov-profiling -gvn-hoist -gvn -globaldce -globalopt -globalsplit -guard-widening -hotcoldsplit -ipconstprop -ipsccp -indvars -irce -infer-address-spaces -inferattrs -inject-tli-mappings -instsimplify -instcombine -instnamer -jump-threading -lcssa -licm -libcalls-shrinkwrap -load-store-vectorizer -loop-data-prefetch -loop-deletion -loop-distribute -loop-fusion -loop-guard-widening -loop-idiom -loop-interchange -loop-load-elim -loop-predication -loop-reroll -loop-rotate -loop-simplifycfg -loop-simplify -loop-sink -loop-reduce -loop-unroll-and-jam -loop-versioning-licm -loop-versioning -loweratomic -lower-constant-intrinsics -lower-expect -lower-guard-intrinsic -lowerinvoke -lower-matrix-intrinsics -lowerswitch -lower-widenable-condition -memcpyopt -mergefunc -mergeicmps -mldst-motion -sancov -name-anon-globals -nary-reassociate -newgvn -pgo-memop-opt -partial-inliner -partially-inline-libcalls -post-inline-ee-instrument -functionattrs -mem2reg -prune-eh -reassociate -redundant-dbg-inst-elim -rpo-functionattrs -rewrite-statepoints-for-gc -sccp -slp-vectorizer -sroa -scalarizer -separate-const-offset-from-gep -simple-loop-unswitch -sink -speculative-execution -slsr -strip-dead-prototypes -strip-debug-declare -strip-nondebug -strip -tailcallelim -mergereturn])
+
+
+*** Iteration 1 of 6
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 10	Current reward: 0.00	Avg reward: 0.04	Best reward: 0.95	
+Episode 20	Current reward: 0.06	Avg reward: 0.17	Best reward: 2.91	
+Episode 30	Current reward: 0.00	Avg reward: 0.12	Best reward: 2.91	
+Episode 40	Current reward: 0.01	Avg reward: 0.11	Best reward: 2.91	
+Episode 50	Current reward: 0.00	Avg reward: 0.18	Best reward: 2.91	
+Episode 60	Current reward: 0.95	Avg reward: 0.21	Best reward: 2.91	
+
+Best Sequence: ['-mem2reg', '-functionattrs', '-loop-unroll-and-jam', '-mergereturn', '-lower-widenable-condition'] and Fitness: 2.9050755000000006
+
+Final performance (avg reward): 2.9050755000000006
+
+*** Iteration 2 of 6
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 10	Current reward: 2.36	Avg reward: 0.16	Best reward: 2.36	
+Episode 20	Current reward: 0.00	Avg reward: 0.24	Best reward: 2.36	
+Episode 30	Current reward: 0.01	Avg reward: 0.15	Best reward: 2.36	
+Episode 40	Current reward: 0.00	Avg reward: 0.14	Best reward: 2.36	
+Episode 50	Current reward: 0.03	Avg reward: 0.15	Best reward: 2.36	
+Episode 60	Current reward: 0.00	Avg reward: 0.12	Best reward: 2.36	
+
+Best Sequence: ['-irce', '-sroa', '-forceattrs', '-insert-gcov-profiling', '-redundant-dbg-inst-elim'] and Fitness: 2.3600719999999997
+
+Final performance (avg reward): 2.3600719999999997
+
+*** Iteration 3 of 6
+Episode 1	Current reward: 1.77	Avg reward: 1.77	Best reward: 1.77	
+Episode 10	Current reward: 0.02	Avg reward: 1.16	Best reward: 1.77	
+Episode 20	Current reward: 1.08	Avg reward: 0.81	Best reward: 1.77	
+Episode 30	Current reward: 0.00	Avg reward: 0.50	Best reward: 1.77	
+Episode 40	Current reward: 2.95	Avg reward: 0.52	Best reward: 2.95	
+Episode 50	Current reward: 0.57	Avg reward: 0.43	Best reward: 2.95	
+Episode 60	Current reward: 0.00	Avg reward: 0.45	Best reward: 2.95	
+
+Best Sequence: ['-mem2reg', '-dce', '-memcpyopt', '-globalopt', '-memcpyopt'] and Fitness: 2.9500564999999996
+
+Final performance (avg reward): 2.9500564999999996
+
+*** Iteration 4 of 6
+Episode 1	Current reward: 0.57	Avg reward: 0.57	Best reward: 0.57	
+Episode 10	Current reward: 0.00	Avg reward: 0.58	Best reward: 2.81	
+Episode 20	Current reward: 0.43	Avg reward: 0.37	Best reward: 2.81	
+Episode 30	Current reward: 0.00	Avg reward: 0.38	Best reward: 2.95	
+Episode 40	Current reward: 0.57	Avg reward: 0.36	Best reward: 2.95	
+Episode 50	Current reward: 0.00	Avg reward: 0.40	Best reward: 2.99	
+Episode 60	Current reward: 0.00	Avg reward: 0.24	Best reward: 2.99	
+
+Best Sequence: ['-mem2reg', '-lowerinvoke', '-jump-threading', '-jump-threading', '-correlated-propagation'] and Fitness: 2.9949999999999997
+
+Final performance (avg reward): 2.9949999999999997
+
+*** Iteration 5 of 6
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 10	Current reward: 0.00	Avg reward: 0.01	Best reward: 0.05	
+Episode 20	Current reward: 0.65	Avg reward: 0.22	Best reward: 2.91	
+Episode 30	Current reward: 0.00	Avg reward: 0.13	Best reward: 2.91	
+Episode 40	Current reward: 0.00	Avg reward: 0.17	Best reward: 2.95	
+Episode 50	Current reward: 0.00	Avg reward: 0.27	Best reward: 2.95	
+Episode 60	Current reward: 0.00	Avg reward: 0.17	Best reward: 2.95	
+
+Best Sequence: ['-mem2reg', '-sroa', '-dce', '-loop-load-elim', '-strip'] and Fitness: 2.9499999999999997
+
+Final performance (avg reward): 2.9499999999999997
+
+*** Iteration 6 of 6
+Episode 1	Current reward: 0.08	Avg reward: 0.08	Best reward: 0.08	
+Episode 10	Current reward: 0.03	Avg reward: 0.05	Best reward: 0.08	
+Episode 20	Current reward: 0.97	Avg reward: 0.15	Best reward: 0.97	
+Episode 30	Current reward: 0.03	Avg reward: 0.20	Best reward: 2.27	
+Episode 40	Current reward: 0.00	Avg reward: 0.16	Best reward: 2.27	
+Episode 50	Current reward: 0.00	Avg reward: 0.21	Best reward: 2.27	
+Episode 60	Current reward: 0.00	Avg reward: 0.24	Best reward: 2.91	
+
+Best Sequence: ['-mem2reg', '-die', '-loop-sink', '-loop-predication', '-infer-address-spaces'] and Fitness: 2.9050000000000002
+
+Final performance (avg reward): 2.9050000000000002
+
+*** Reinforcement Learning Performance Review w/ Multiple Iterations
+Algorthm Fitness: [2.9050755000000006, 2.3600719999999997, 2.9500564999999996, 2.9949999999999997, 2.9499999999999997, 2.9050000000000002]
+
+Best Fitness: 2.9949999999999997
+Avg Fitness: 2.8442006666666666
+Worst Fitness: 2.3600719999999997
+Best Inviduals: [['-mem2reg', '-functionattrs', '-loop-unroll-and-jam', '-mergereturn', '-lower-widenable-condition'], ['-irce', '-sroa', '-forceattrs', '-insert-gcov-profiling', '-redundant-dbg-inst-elim'], ['-mem2reg', '-dce', '-memcpyopt', '-globalopt', '-memcpyopt'], ['-mem2reg', '-lowerinvoke', '-jump-threading', '-jump-threading', '-correlated-propagation'], ['-mem2reg', '-sroa', '-dce', '-loop-load-elim', '-strip'], ['-mem2reg', '-die', '-loop-sink', '-loop-predication', '-infer-address-spaces']]

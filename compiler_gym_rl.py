@@ -51,7 +51,7 @@ flags.DEFINE_list(
         "-correlated-propagation",
         "-cross-dso-cfi",
         "-deadargelim",
-        "-dead-store-elimination",
+        "-dse",
         "-reg2mem",
         "-div-rem-pairs",
         "-early-cse-memssa",
@@ -150,9 +150,9 @@ flags.DEFINE_list(
 
 flags.DEFINE_integer("episode_len", 5, "Number of transitions per episode.")
 flags.DEFINE_integer("hidden_size", 64, "Latent vector size.")
-flags.DEFINE_integer("log_interval", 10, "Episodes per log output.")
+flags.DEFINE_integer("log_interval", 4, "Episodes per log output.")
 flags.DEFINE_integer("episodes_count",60, "Number of episodes.")
-flags.DEFINE_integer("iterations", 6, "Times to redo entire training.")
+flags.DEFINE_integer("iterations", 3, "Times to redo entire training.")
 flags.DEFINE_float("exploration", 0.0, "Rate to explore random transitions.")
 flags.DEFINE_float("mean_smoothing", 0.95, "Smoothing factor for mean normalization.")
 flags.DEFINE_float("std_smoothing", 0.4, "Smoothing factor for std dev normalization.")
@@ -448,7 +448,8 @@ def main(argv):
         #without benchmark
         # env.reset()
     
-        benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
+        #benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
+        benchmarks = ["benchmark://cbench-v1/crc32"] #add additional
 
         for benchmark in benchmarks:
             print(f"Running Benchmark: {benchmark}")

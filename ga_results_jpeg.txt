@@ -1,0 +1,63 @@
+Iteration 1  of  3
+Generation 1: Best Fitness = 306.5029
+Generation 2: Best Fitness = 519.1751
+Generation 3: Best Fitness = 521.7257
+Generation 4: Best Fitness = 521.7255
+Generation 5: Best Fitness = 503.2728
+Generation 6: Best Fitness = 521.7281
+Generation 7: Best Fitness = 518.3407
+Generation 8: Best Fitness = 503.2742
+Generation 9: Best Fitness = 503.8305
+Generation 10: Best Fitness = 505.3877
+Generation 11: Best Fitness = 505.3853
+Generation 12: Best Fitness = 503.9812
+Generation 13: Best Fitness = 503.8313
+Generation 14: Best Fitness = 503.9805
+Generation 15: Best Fitness = 503.9826
+Achieved Fitness: 521.7281355, Optimal Sequence: ['-loop-simplify', '-newgvn', '-mem2reg', '-simplifycfg', '-instsimplify']
+Iteration 2  of  3
+Generation 1: Best Fitness = 652.4190
+Generation 2: Best Fitness = 653.0750
+Generation 3: Best Fitness = 653.0765
+Generation 4: Best Fitness = 653.0759
+Generation 5: Best Fitness = 653.8669
+Generation 6: Best Fitness = 662.3803
+Generation 7: Best Fitness = 662.3805
+Generation 8: Best Fitness = 704.3553
+Generation 9: Best Fitness = 704.3556
+Generation 10: Best Fitness = 704.3655
+Generation 11: Best Fitness = 694.5561
+Generation 12: Best Fitness = 694.5583
+Generation 13: Best Fitness = 694.5550
+Generation 14: Best Fitness = 694.5568
+Generation 15: Best Fitness = 694.5560
+Achieved Fitness: 704.3655325, Optimal Sequence: ['-mem2reg', '-partially-inline-libcalls', '-gvn', '-instcombine', '-coro-early']
+Iteration 3  of  3
+Generation 1: Best Fitness = 685.5100
+Generation 2: Best Fitness = 685.5106
+Generation 3: Best Fitness = 689.0809
+Generation 4: Best Fitness = 685.5115
+Generation 5: Best Fitness = 689.0813
+Generation 6: Best Fitness = 689.0805
+Generation 7: Best Fitness = 698.0761
+Generation 8: Best Fitness = 689.0808
+Generation 9: Best Fitness = 689.0800
+Generation 10: Best Fitness = 633.6851
+Generation 11: Best Fitness = 633.6870
+Generation 12: Best Fitness = 633.6872
+Generation 13: Best Fitness = 634.4728
+Generation 14: Best Fitness = 691.1076
+Generation 15: Best Fitness = 633.9738
+Achieved Fitness: 698.0761455, Optimal Sequence: ['-sroa', '-guard-widening', '-early-cse-memssa', '-mem2reg', '-simplifycfg']
+
+Genetic Algorithm Performance Review w/ Multiple Iterations
+Algorthm Fitness Results: [521.7281355, 704.3655325, 698.0761455]
+
+Best Fitness: 704.3655325
+
+Avg Fitness: 641.3899378333333
+
+Worst Fitness: 521.7281355
+
+Best Inviduals: [['-loop-simplify', '-newgvn', '-mem2reg', '-simplifycfg', '-instsimplify'], ['-mem2reg', '-partially-inline-libcalls', '-gvn', '-instcombine', '-coro-early'], ['-sroa', '-guard-widening', '-early-cse-memssa', '-mem2reg', '-simplifycfg']]
+--------------------------------------
