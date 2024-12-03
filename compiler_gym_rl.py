@@ -55,7 +55,7 @@ flags.DEFINE_integer("episode_len", 5, "Number of transitions per episode.")
 flags.DEFINE_integer("hidden_size", 64, "Latent vector size.")
 flags.DEFINE_integer("log_interval", 10, "Episodes per log output.")
 flags.DEFINE_integer("episodes_count",60, "Number of episodes.")
-flags.DEFINE_integer("iterations", 2, "Times to redo entire training.")
+flags.DEFINE_integer("iterations", 6, "Times to redo entire training.")
 flags.DEFINE_float("exploration", 0.0, "Rate to explore random transitions.")
 flags.DEFINE_float("mean_smoothing", 0.95, "Smoothing factor for mean normalization.")
 flags.DEFINE_float("std_smoothing", 0.4, "Smoothing factor for std dev normalization.")
@@ -351,41 +351,46 @@ def main(argv):
         #without benchmark
         # env.reset()
     
-        #if using benchmarks
-        benchmark1 = "benchmark://cbench-v1/crc32" #add additional
-        env.reset(benchmark=benchmark1)
+        benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
 
-        
+        for benchmark in benchmarks:
+            print(f"Running Benchmark: {benchmark}")
+            #if using benchmarks
+            benchmark1 = benchmark
+            env.reset(benchmark=benchmark1)
+
+            
 
 
 
-        print(f"Seed: {FLAGS.seed}")
-        print(f"Episode length: {FLAGS.episode_len}")
-        print(f"Number of episodes: {FLAGS.episodes_count}")
-        # print(f"Exploration: {FLAGS.exploration:.2%}")
-        # print(f"Learning rate: {FLAGS.learning_rate}")
-        print(f"Observations: Runtime, IR Instruction Count, Autophase Instruction Count")
-        print(f"Benchmark: {FLAGS.benchmark}")
-        print(f"Action space: {env.action_space}\n")
+            print(f"Seed: {FLAGS.seed}")
+            print(f"Episode length: {FLAGS.episode_len}")
+            print(f"Number of episodes: {FLAGS.episodes_count}")
+            # print(f"Exploration: {FLAGS.exploration:.2%}")
+            # print(f"Learning rate: {FLAGS.learning_rate}")
+            print(f"Observations: Runtime, IR Instruction Count, Autophase Instruction Count")
+            print(f"Benchmark: {FLAGS.benchmark}")
+            print(f"Action space: {env.action_space}\n")
 
-        if FLAGS.iterations == 1:
-            TrainActorCritic(env)
-            return
+            if FLAGS.iterations == 1:
+                TrainActorCritic(env)
+                return
 
-        best_actions = []
-        best_fitness=[]
-        for i in range(1, FLAGS.iterations + 1):
-            print(f"\n*** Iteration {i} of {FLAGS.iterations}")
-            fitness, actions = TrainActorCritic(env)
-            best_fitness.append(fitness)
-            best_actions.append(actions)
+            best_actions = []
+            best_fitness=[]
+            for i in range(1, FLAGS.iterations + 1):
+                print(f"\n*** Iteration {i} of {FLAGS.iterations}")
+                fitness, actions = TrainActorCritic(env)
+                best_fitness.append(fitness)
+                best_actions.append(actions)
 
-        print("\n*** Reinforcement Learning Performance Review w/ Multiple Iterations")
-        print(f"Algorthm Fitness: {best_fitness}\n")
-        print(f"Best Fitness: {max(best_fitness)}")
-        print(f"Avg Fitness: {statistics.mean(best_fitness)}")
-        print(f"Worst Fitness: {min(best_fitness)}")
-        print(f"Best Inviduals: {best_actions}")
+            print("\n*** Reinforcement Learning Performance Review w/ Multiple Iterations")
+            print(f"Algorthm Fitness: {best_fitness}\n")
+            print(f"Best Fitness: {max(best_fitness)}")
+            print(f"Avg Fitness: {statistics.mean(best_fitness)}")
+            print(f"Worst Fitness: {min(best_fitness)}")
+            print(f"Best Inviduals: {best_actions}")
+            print("--------------------------------------")
 
 if __name__ == "__main__":
     app.run(main)

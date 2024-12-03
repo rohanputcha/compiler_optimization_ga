@@ -44,7 +44,7 @@ flags.DEFINE_integer("generation_count", 6, "Number of generations to evolve.")
 flags.DEFINE_integer("episode_len", 5, "Length of each sequence of optimizations.")
 flags.DEFINE_float("mutation_rate", .1, "Probability of mutation.")
 flags.DEFINE_float("crossover_rate", .8, "Probability of crossover.")
-flags.DEFINE_integer("iterations", 2, "Training")
+flags.DEFINE_integer("iterations", 6, "Training")
 
 
 FLAGS = flags.FLAGS
@@ -132,40 +132,45 @@ def main(argv):
     env = compiler_gym.make("llvm-v0")
     
     #without benchmarks
-    env.reset() 
+    #env.reset() 
 
     #if using benchmarks
-    benchmark1 = "benchmark://cbench-v1/crc32" #add additional
-    env.reset(benchmark=benchmark1)
-  
-    print(f"Episode length: {FLAGS.episode_len}")
-    print(f"Population Size: {FLAGS.population_size}")
-    print(f"Generation Count: {FLAGS.generation_count}")
-    print(f"Mutation Rate: {FLAGS.mutation_rate}")
-    print(f"Crossover Rate: {FLAGS.crossover_rate}")
-    print(f"Iterations: {FLAGS.iterations}")
-    print(f"Observations: Runtime, IR Instruction Count, Autophase Instruction Count")
-    print(f"Action space: {FLAGS.flags}\n")
+    benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
+
+    for benchmark in benchmarks:
+        print(f"Running Benchmark: {benchmark}")
+        env.reset(benchmark=benchmark)
+        print(next(env.datasets.benchmark_uris()))
     
+        print(f"Episode length: {FLAGS.episode_len}")
+        print(f"Population Size: {FLAGS.population_size}")
+        print(f"Generation Count: {FLAGS.generation_count}")
+        print(f"Mutation Rate: {FLAGS.mutation_rate}")
+        print(f"Crossover Rate: {FLAGS.crossover_rate}")
+        print(f"Iterations: {FLAGS.iterations}")
+        print(f"Observations: Runtime, IR Instruction Count, Autophase Instruction Count")
+        print(f"Action space: {FLAGS.flags}\n")
+        
 
-    if FLAGS.iterations == 1:
-        genetic_algorithm(env)
-        return
+        if FLAGS.iterations == 1:
+            genetic_algorithm(env)
+            return
 
-    best_fitness = []
-    best_individual = []
-    for t in range(1, FLAGS.iterations + 1):
-        print("Iteration", t, " of ", FLAGS.iterations)
-        fitness, individual = genetic_algorithm(env)
-        best_fitness.append(fitness)
-        best_individual.append(individual)
-    print("\nGenetic Algorithm Performance Review w/ Multiple Iterations")
-    print(f"Algorthm Fitness Results: {best_fitness}\n")
-    print(f"Best Fitness: {max(best_fitness)}\n")
-    print(f"Avg Fitness: {statistics.mean(best_fitness)}\n")
-    print(f"Worst Fitness: {min(best_fitness)}\n")
-    print(f"Best Inviduals: {best_individual}")
-    env.close()
+        best_fitness = []
+        best_individual = []
+        for t in range(1, FLAGS.iterations + 1):
+            print("Iteration", t, " of ", FLAGS.iterations)
+            fitness, individual = genetic_algorithm(env)
+            best_fitness.append(fitness)
+            best_individual.append(individual)
+        print("\nGenetic Algorithm Performance Review w/ Multiple Iterations")
+        print(f"Algorthm Fitness Results: {best_fitness}\n")
+        print(f"Best Fitness: {max(best_fitness)}\n")
+        print(f"Avg Fitness: {statistics.mean(best_fitness)}\n")
+        print(f"Worst Fitness: {min(best_fitness)}\n")
+        print(f"Best Inviduals: {best_individual}")
+        print("--------------------------------------")
+        env.close()
 
 if __name__ == "__main__":
     app.run(main)
