@@ -4,7 +4,8 @@ import gym
 import compiler_gym
 from typing import List, Tuple
 from absl import app, flags
-from compiler_gym.util.flags.env_from_flags import env_from_flags
+import statistics
+
 
 flags.DEFINE_list(
     "flags",
@@ -39,10 +40,12 @@ flags.DEFINE_list(
     "List of optimizations to explore.",
 )
 flags.DEFINE_integer("population_size", 10, "Number of individuals in the population.")
-flags.DEFINE_integer("generation_count", 5, "Number of generations to evolve.")
+flags.DEFINE_integer("generation_count", 6, "Number of generations to evolve.")
 flags.DEFINE_integer("episode_len", 5, "Length of each sequence of optimizations.")
 flags.DEFINE_float("mutation_rate", .1, "Probability of mutation.")
 flags.DEFINE_float("crossover_rate", .8, "Probability of crossover.")
+flags.DEFINE_integer("iterations", 2, "Training")
+
 
 FLAGS = flags.FLAGS
 
@@ -109,7 +112,7 @@ def genetic_algorithm(env):
         if current_best_fitness > best_fitness:
             best_fitness = current_best_fitness
             best_individual = current_best_individual
-        print(f"Generation {generation + 1}: Best Fitness = {current_best_fitness}")
+        print(f"Generation {generation + 1}: Best Fitness = {current_best_fitness:.4f}")
         new_population = []
         while len(new_population) < FLAGS.population_size:
             parent_indices = random.choices(range(len(population)), weights=fitnesses, k=2)
@@ -119,15 +122,49 @@ def genetic_algorithm(env):
             child2 = mutate(child2)
             new_population.extend([child1, child2])
         population = new_population[:FLAGS.population_size]
-    print(f"Best Individual: {best_individual}, Best Fitness: {best_fitness}")
-    return best_individual, best_fitness
+    # print(f"Best Individual: {best_individual}, Best Fitness: {best_fitness}")
+    print(f"Achieved Fitness: {best_fitness}, Optimal Sequence: {best_individual}")
+
+    return best_fitness, best_individual
 
 def main(argv):
     del argv
     env = compiler_gym.make("llvm-v0")
-    env.reset()
-    best_individual, best_fitness = genetic_algorithm(env)
-    print(f"Optimal Sequence: {best_individual}, Achieved Fitness: {best_fitness}")
+    
+    #without benchmarks
+    env.reset() 
+
+    #if using benchmarks
+    benchmark1 = "benchmark://cbench-v1/crc32" #add additional
+    env.reset(benchmark=benchmark1)
+  
+    print(f"Episode length: {FLAGS.episode_len}")
+    print(f"Population Size: {FLAGS.population_size}")
+    print(f"Generation Count: {FLAGS.generation_count}")
+    print(f"Mutation Rate: {FLAGS.mutation_rate}")
+    print(f"Crossover Rate: {FLAGS.crossover_rate}")
+    print(f"Iterations: {FLAGS.iterations}")
+    print(f"Observations: Runtime, IR Instruction Count, Autophase Instruction Count")
+    print(f"Action space: {FLAGS.flags}\n")
+    
+
+    if FLAGS.iterations == 1:
+        genetic_algorithm(env)
+        return
+
+    best_fitness = []
+    best_individual = []
+    for t in range(1, FLAGS.iterations + 1):
+        print("Iteration", t, " of ", FLAGS.iterations)
+        fitness, individual = genetic_algorithm(env)
+        best_fitness.append(fitness)
+        best_individual.append(individual)
+    print("\nGenetic Algorithm Performance Review w/ Multiple Iterations")
+    print(f"Algorthm Fitness Results: {best_fitness}\n")
+    print(f"Best Fitness: {max(best_fitness)}\n")
+    print(f"Avg Fitness: {statistics.mean(best_fitness)}\n")
+    print(f"Worst Fitness: {min(best_fitness)}\n")
+    print(f"Best Inviduals: {best_individual}")
     env.close()
 
 if __name__ == "__main__":
