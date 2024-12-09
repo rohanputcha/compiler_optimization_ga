@@ -136,11 +136,11 @@ flags.DEFINE_list(
     "List of optimizations to explore.",
 )
 flags.DEFINE_integer("population_size", 10, "Number of individuals in the population.")
-flags.DEFINE_integer("generation_count", 50, "Number of generations to evolve.")
+flags.DEFINE_integer("generation_count", 100, "Number of generations to evolve.")
 flags.DEFINE_integer("episode_len", 5, "Length of each sequence of optimizations.")
 flags.DEFINE_float("mutation_rate", .1, "Probability of mutation.")
 flags.DEFINE_float("crossover_rate", .8, "Probability of crossover.")
-flags.DEFINE_integer("iterations", 3, "Training")
+flags.DEFINE_integer("iterations", 24, "Training")
 
 
 FLAGS = flags.FLAGS
