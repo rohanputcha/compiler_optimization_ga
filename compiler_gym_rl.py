@@ -151,7 +151,7 @@ flags.DEFINE_list(
 flags.DEFINE_integer("episode_len", 5, "Number of transitions per episode.")
 flags.DEFINE_integer("hidden_size", 64, "Latent vector size.")
 flags.DEFINE_integer("log_interval", 4, "Episodes per log output.")
-flags.DEFINE_integer("episodes_count",60, "Number of episodes.")
+flags.DEFINE_integer("episodes_count",240, "Number of episodes.")
 flags.DEFINE_integer("iterations", 3, "Times to redo entire training.")
 flags.DEFINE_float("exploration", 0.0, "Rate to explore random transitions.")
 flags.DEFINE_float("mean_smoothing", 0.95, "Smoothing factor for mean normalization.")
@@ -450,7 +450,7 @@ def main(argv):
     
         #benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
         benchmarks = ["benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/motion", "benchmark://chstone-v0/gsm"] #add additional
-
+        #benchmarks = ["benchmark://github-v0/1", "benchmark://github-v0/2", "benchmark://github-v0/3", "benchmark://github-v0/4", "benchmark://github-v0/5"]
         for benchmark in benchmarks:
             print(f"Running Benchmark: {benchmark}")
             #if using benchmarks

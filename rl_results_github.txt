@@ -1,0 +1,899 @@
+Running Benchmark: benchmark://github-v0/1
+Seed: 204
+Episode length: 5
+Number of episodes: 240
+Observations: Runtime, IR Instruction Count, Autophase Instruction Count
+Benchmark: None
+Action space: Commandline([-add-discriminators -adce -loop-unroll -loop-unswitch -loop-vectorize -aggressive-instcombine -alignment-from-assumptions -always-inline -argpromotion -attributor -barrier -bdce -loop-instsimplify -break-crit-edges -simplifycfg -dce -called-value-propagation -die -canonicalize-aliases -consthoist -constmerge -constprop -coro-cleanup -coro-early -coro-elide -coro-split -correlated-propagation -cross-dso-cfi -deadargelim -dse -reg2mem -div-rem-pairs -early-cse-memssa -elim-avail-extern -ee-instrument -flattencfg -float2int -forceattrs -inline -insert-gcov-profiling -gvn-hoist -gvn -globaldce -globalopt -globalsplit -guard-widening -hotcoldsplit -ipconstprop -ipsccp -indvars -irce -infer-address-spaces -inferattrs -inject-tli-mappings -instsimplify -instcombine -instnamer -jump-threading -lcssa -licm -libcalls-shrinkwrap -load-store-vectorizer -loop-data-prefetch -loop-deletion -loop-distribute -loop-fusion -loop-guard-widening -loop-idiom -loop-interchange -loop-load-elim -loop-predication -loop-reroll -loop-rotate -loop-simplifycfg -loop-simplify -loop-sink -loop-reduce -loop-unroll-and-jam -loop-versioning-licm -loop-versioning -loweratomic -lower-constant-intrinsics -lower-expect -lower-guard-intrinsic -lowerinvoke -lower-matrix-intrinsics -lowerswitch -lower-widenable-condition -memcpyopt -mergefunc -mergeicmps -mldst-motion -sancov -name-anon-globals -nary-reassociate -newgvn -pgo-memop-opt -partial-inliner -partially-inline-libcalls -post-inline-ee-instrument -functionattrs -mem2reg -prune-eh -reassociate -redundant-dbg-inst-elim -rpo-functionattrs -rewrite-statepoints-for-gc -sccp -slp-vectorizer -sroa -scalarizer -separate-const-offset-from-gep -simple-loop-unswitch -sink -speculative-execution -slsr -strip-dead-prototypes -strip-debug-declare -strip-nondebug -strip -tailcallelim -mergereturn])
+
+
+*** Iteration 1 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-strip-dead-prototypes', '-always-inline', '-loop-fusion', '-instnamer', '-loop-data-prefetch'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Iteration 2 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-redundant-dbg-inst-elim', '-coro-early', '-coro-cleanup', '-called-value-propagation', '-attributor'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Iteration 3 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-partially-inline-libcalls', '-die', '-loop-interchange', '-globaldce', '-loop-instsimplify'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Reinforcement Learning Performance Review w/ Multiple Iterations
+Algorthm Fitness: [0.0, 0.0, 0.0]
+
+Best Fitness: 0.0
+Avg Fitness: 0.0
+Worst Fitness: 0.0
+Best Inviduals: [['-strip-dead-prototypes', '-always-inline', '-loop-fusion', '-instnamer', '-loop-data-prefetch'], ['-redundant-dbg-inst-elim', '-coro-early', '-coro-cleanup', '-called-value-propagation', '-attributor'], ['-partially-inline-libcalls', '-die', '-loop-interchange', '-globaldce', '-loop-instsimplify']]
+--------------------------------------
+Running Benchmark: benchmark://github-v0/2
+Seed: 204
+Episode length: 5
+Number of episodes: 240
+Observations: Runtime, IR Instruction Count, Autophase Instruction Count
+Benchmark: None
+Action space: Commandline([-add-discriminators -adce -loop-unroll -loop-unswitch -loop-vectorize -aggressive-instcombine -alignment-from-assumptions -always-inline -argpromotion -attributor -barrier -bdce -loop-instsimplify -break-crit-edges -simplifycfg -dce -called-value-propagation -die -canonicalize-aliases -consthoist -constmerge -constprop -coro-cleanup -coro-early -coro-elide -coro-split -correlated-propagation -cross-dso-cfi -deadargelim -dse -reg2mem -div-rem-pairs -early-cse-memssa -elim-avail-extern -ee-instrument -flattencfg -float2int -forceattrs -inline -insert-gcov-profiling -gvn-hoist -gvn -globaldce -globalopt -globalsplit -guard-widening -hotcoldsplit -ipconstprop -ipsccp -indvars -irce -infer-address-spaces -inferattrs -inject-tli-mappings -instsimplify -instcombine -instnamer -jump-threading -lcssa -licm -libcalls-shrinkwrap -load-store-vectorizer -loop-data-prefetch -loop-deletion -loop-distribute -loop-fusion -loop-guard-widening -loop-idiom -loop-interchange -loop-load-elim -loop-predication -loop-reroll -loop-rotate -loop-simplifycfg -loop-simplify -loop-sink -loop-reduce -loop-unroll-and-jam -loop-versioning-licm -loop-versioning -loweratomic -lower-constant-intrinsics -lower-expect -lower-guard-intrinsic -lowerinvoke -lower-matrix-intrinsics -lowerswitch -lower-widenable-condition -memcpyopt -mergefunc -mergeicmps -mldst-motion -sancov -name-anon-globals -nary-reassociate -newgvn -pgo-memop-opt -partial-inliner -partially-inline-libcalls -post-inline-ee-instrument -functionattrs -mem2reg -prune-eh -reassociate -redundant-dbg-inst-elim -rpo-functionattrs -rewrite-statepoints-for-gc -sccp -slp-vectorizer -sroa -scalarizer -separate-const-offset-from-gep -simple-loop-unswitch -sink -speculative-execution -slsr -strip-dead-prototypes -strip-debug-declare -strip-nondebug -strip -tailcallelim -mergereturn])
+
+
+*** Iteration 1 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-partially-inline-libcalls', '-indvars', '-inferattrs', '-forceattrs', '-tailcallelim'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Iteration 2 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-jump-threading', '-partial-inliner', '-called-value-propagation', '-jump-threading', '-mem2reg'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Iteration 3 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-rewrite-statepoints-for-gc', '-bdce', '-constmerge', '-insert-gcov-profiling', '-loop-predication'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Reinforcement Learning Performance Review w/ Multiple Iterations
+Algorthm Fitness: [0.0, 0.0, 0.0]
+
+Best Fitness: 0.0
+Avg Fitness: 0.0
+Worst Fitness: 0.0
+Best Inviduals: [['-partially-inline-libcalls', '-indvars', '-inferattrs', '-forceattrs', '-tailcallelim'], ['-jump-threading', '-partial-inliner', '-called-value-propagation', '-jump-threading', '-mem2reg'], ['-rewrite-statepoints-for-gc', '-bdce', '-constmerge', '-insert-gcov-profiling', '-loop-predication']]
+--------------------------------------
+Running Benchmark: benchmark://github-v0/3
+Seed: 204
+Episode length: 5
+Number of episodes: 240
+Observations: Runtime, IR Instruction Count, Autophase Instruction Count
+Benchmark: None
+Action space: Commandline([-add-discriminators -adce -loop-unroll -loop-unswitch -loop-vectorize -aggressive-instcombine -alignment-from-assumptions -always-inline -argpromotion -attributor -barrier -bdce -loop-instsimplify -break-crit-edges -simplifycfg -dce -called-value-propagation -die -canonicalize-aliases -consthoist -constmerge -constprop -coro-cleanup -coro-early -coro-elide -coro-split -correlated-propagation -cross-dso-cfi -deadargelim -dse -reg2mem -div-rem-pairs -early-cse-memssa -elim-avail-extern -ee-instrument -flattencfg -float2int -forceattrs -inline -insert-gcov-profiling -gvn-hoist -gvn -globaldce -globalopt -globalsplit -guard-widening -hotcoldsplit -ipconstprop -ipsccp -indvars -irce -infer-address-spaces -inferattrs -inject-tli-mappings -instsimplify -instcombine -instnamer -jump-threading -lcssa -licm -libcalls-shrinkwrap -load-store-vectorizer -loop-data-prefetch -loop-deletion -loop-distribute -loop-fusion -loop-guard-widening -loop-idiom -loop-interchange -loop-load-elim -loop-predication -loop-reroll -loop-rotate -loop-simplifycfg -loop-simplify -loop-sink -loop-reduce -loop-unroll-and-jam -loop-versioning-licm -loop-versioning -loweratomic -lower-constant-intrinsics -lower-expect -lower-guard-intrinsic -lowerinvoke -lower-matrix-intrinsics -lowerswitch -lower-widenable-condition -memcpyopt -mergefunc -mergeicmps -mldst-motion -sancov -name-anon-globals -nary-reassociate -newgvn -pgo-memop-opt -partial-inliner -partially-inline-libcalls -post-inline-ee-instrument -functionattrs -mem2reg -prune-eh -reassociate -redundant-dbg-inst-elim -rpo-functionattrs -rewrite-statepoints-for-gc -sccp -slp-vectorizer -sroa -scalarizer -separate-const-offset-from-gep -simple-loop-unswitch -sink -speculative-execution -slsr -strip-dead-prototypes -strip-debug-declare -strip-nondebug -strip -tailcallelim -mergereturn])
+
+
+*** Iteration 1 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-loop-unroll-and-jam', '-guard-widening', '-strip-dead-prototypes', '-loop-guard-widening', '-dce'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Iteration 2 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-loop-simplifycfg', '-lower-constant-intrinsics', '-simplifycfg', '-ee-instrument', '-hotcoldsplit'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Iteration 3 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-mldst-motion', '-infer-address-spaces', '-ee-instrument', '-sccp', '-lower-matrix-intrinsics'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Reinforcement Learning Performance Review w/ Multiple Iterations
+Algorthm Fitness: [0.0, 0.0, 0.0]
+
+Best Fitness: 0.0
+Avg Fitness: 0.0
+Worst Fitness: 0.0
+Best Inviduals: [['-loop-unroll-and-jam', '-guard-widening', '-strip-dead-prototypes', '-loop-guard-widening', '-dce'], ['-loop-simplifycfg', '-lower-constant-intrinsics', '-simplifycfg', '-ee-instrument', '-hotcoldsplit'], ['-mldst-motion', '-infer-address-spaces', '-ee-instrument', '-sccp', '-lower-matrix-intrinsics']]
+--------------------------------------
+Running Benchmark: benchmark://github-v0/4
+Seed: 204
+Episode length: 5
+Number of episodes: 240
+Observations: Runtime, IR Instruction Count, Autophase Instruction Count
+Benchmark: None
+Action space: Commandline([-add-discriminators -adce -loop-unroll -loop-unswitch -loop-vectorize -aggressive-instcombine -alignment-from-assumptions -always-inline -argpromotion -attributor -barrier -bdce -loop-instsimplify -break-crit-edges -simplifycfg -dce -called-value-propagation -die -canonicalize-aliases -consthoist -constmerge -constprop -coro-cleanup -coro-early -coro-elide -coro-split -correlated-propagation -cross-dso-cfi -deadargelim -dse -reg2mem -div-rem-pairs -early-cse-memssa -elim-avail-extern -ee-instrument -flattencfg -float2int -forceattrs -inline -insert-gcov-profiling -gvn-hoist -gvn -globaldce -globalopt -globalsplit -guard-widening -hotcoldsplit -ipconstprop -ipsccp -indvars -irce -infer-address-spaces -inferattrs -inject-tli-mappings -instsimplify -instcombine -instnamer -jump-threading -lcssa -licm -libcalls-shrinkwrap -load-store-vectorizer -loop-data-prefetch -loop-deletion -loop-distribute -loop-fusion -loop-guard-widening -loop-idiom -loop-interchange -loop-load-elim -loop-predication -loop-reroll -loop-rotate -loop-simplifycfg -loop-simplify -loop-sink -loop-reduce -loop-unroll-and-jam -loop-versioning-licm -loop-versioning -loweratomic -lower-constant-intrinsics -lower-expect -lower-guard-intrinsic -lowerinvoke -lower-matrix-intrinsics -lowerswitch -lower-widenable-condition -memcpyopt -mergefunc -mergeicmps -mldst-motion -sancov -name-anon-globals -nary-reassociate -newgvn -pgo-memop-opt -partial-inliner -partially-inline-libcalls -post-inline-ee-instrument -functionattrs -mem2reg -prune-eh -reassociate -redundant-dbg-inst-elim -rpo-functionattrs -rewrite-statepoints-for-gc -sccp -slp-vectorizer -sroa -scalarizer -separate-const-offset-from-gep -simple-loop-unswitch -sink -speculative-execution -slsr -strip-dead-prototypes -strip-debug-declare -strip-nondebug -strip -tailcallelim -mergereturn])
+
+
+*** Iteration 1 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-gvn-hoist', '-loop-idiom', '-load-store-vectorizer', '-constmerge', '-strip-debug-declare'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Iteration 2 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-globalsplit', '-bdce', '-lower-matrix-intrinsics', '-lower-widenable-condition', '-gvn'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Iteration 3 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 68	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 72	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 76	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 80	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 84	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 88	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 92	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 96	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 100	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 104	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 108	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 112	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 116	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 120	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 124	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 128	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 132	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 136	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 140	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 144	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 148	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 152	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 156	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 160	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 164	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 168	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 172	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 176	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 180	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 184	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 188	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 192	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 196	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 200	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 204	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 208	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 212	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 216	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 220	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 224	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 228	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 232	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 236	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 240	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+
+Best Sequence: ['-gvn-hoist', '-forceattrs', '-deadargelim', '-name-anon-globals', '-early-cse-memssa'] and Fitness: 0.0
+
+Final performance (avg reward): 0.0
+
+*** Reinforcement Learning Performance Review w/ Multiple Iterations
+Algorthm Fitness: [0.0, 0.0, 0.0]
+
+Best Fitness: 0.0
+Avg Fitness: 0.0
+Worst Fitness: 0.0
+Best Inviduals: [['-gvn-hoist', '-loop-idiom', '-load-store-vectorizer', '-constmerge', '-strip-debug-declare'], ['-globalsplit', '-bdce', '-lower-matrix-intrinsics', '-lower-widenable-condition', '-gvn'], ['-gvn-hoist', '-forceattrs', '-deadargelim', '-name-anon-globals', '-early-cse-memssa']]
+--------------------------------------
+Running Benchmark: benchmark://github-v0/5
+Seed: 204
+Episode length: 5
+Number of episodes: 240
+Observations: Runtime, IR Instruction Count, Autophase Instruction Count
+Benchmark: None
+Action space: Commandline([-add-discriminators -adce -loop-unroll -loop-unswitch -loop-vectorize -aggressive-instcombine -alignment-from-assumptions -always-inline -argpromotion -attributor -barrier -bdce -loop-instsimplify -break-crit-edges -simplifycfg -dce -called-value-propagation -die -canonicalize-aliases -consthoist -constmerge -constprop -coro-cleanup -coro-early -coro-elide -coro-split -correlated-propagation -cross-dso-cfi -deadargelim -dse -reg2mem -div-rem-pairs -early-cse-memssa -elim-avail-extern -ee-instrument -flattencfg -float2int -forceattrs -inline -insert-gcov-profiling -gvn-hoist -gvn -globaldce -globalopt -globalsplit -guard-widening -hotcoldsplit -ipconstprop -ipsccp -indvars -irce -infer-address-spaces -inferattrs -inject-tli-mappings -instsimplify -instcombine -instnamer -jump-threading -lcssa -licm -libcalls-shrinkwrap -load-store-vectorizer -loop-data-prefetch -loop-deletion -loop-distribute -loop-fusion -loop-guard-widening -loop-idiom -loop-interchange -loop-load-elim -loop-predication -loop-reroll -loop-rotate -loop-simplifycfg -loop-simplify -loop-sink -loop-reduce -loop-unroll-and-jam -loop-versioning-licm -loop-versioning -loweratomic -lower-constant-intrinsics -lower-expect -lower-guard-intrinsic -lowerinvoke -lower-matrix-intrinsics -lowerswitch -lower-widenable-condition -memcpyopt -mergefunc -mergeicmps -mldst-motion -sancov -name-anon-globals -nary-reassociate -newgvn -pgo-memop-opt -partial-inliner -partially-inline-libcalls -post-inline-ee-instrument -functionattrs -mem2reg -prune-eh -reassociate -redundant-dbg-inst-elim -rpo-functionattrs -rewrite-statepoints-for-gc -sccp -slp-vectorizer -sroa -scalarizer -separate-const-offset-from-gep -simple-loop-unswitch -sink -speculative-execution -slsr -strip-dead-prototypes -strip-debug-declare -strip-nondebug -strip -tailcallelim -mergereturn])
+
+
+*** Iteration 1 of 3
+Episode 1	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 4	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 8	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 12	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 16	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 20	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 24	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 28	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 32	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 36	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 40	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 44	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 48	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 52	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 56	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 60	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
+Episode 64	Current reward: 0.00	Avg reward: 0.00	Best reward: 0.00	
