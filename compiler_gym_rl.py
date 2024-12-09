@@ -198,7 +198,7 @@ class HistoryObservation(gym.ObservationWrapper):
         )
         obs=super().reset(*args, **kwargs)
         self.initial_ic = self.env.observation["IrInstructionCount"]
-        self.initial_rt = self.env.observation["Runtime"][0]
+        self.initial_rt = 0 if len(self.env.observation["Runtime"])  == 0 else self.env.observation["Runtime"][0]
         self.initial_auto = self.env.observation["Autophase"][51]
         # print("hello there before", self.env.observation["Runtime"][0])
 
@@ -217,7 +217,7 @@ class HistoryObservation(gym.ObservationWrapper):
         obs, _, done, info = super().step(action)
 
         # Update after-action observations
-        self.after_rt = self.env.observation["Runtime"][-1]
+        self.after_rt =  0 if len(self.env.observation["Runtime"]) == 0 else self.env.observation["Runtime"][-1]
         self.after_ic = self.env.observation["IrInstructionCount"]
         self.after_auto = self.env.observation["Autophase"][51]
 
@@ -449,7 +449,7 @@ def main(argv):
         # env.reset()
     
         #benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
-        benchmarks = ["benchmark://cbench-v1/crc32"] #add additional
+        benchmarks = ["benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/motion", "benchmark://chstone-v0/gsm"] #add additional
 
         for benchmark in benchmarks:
             print(f"Running Benchmark: {benchmark}")

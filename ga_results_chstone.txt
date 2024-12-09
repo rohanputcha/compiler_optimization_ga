@@ -1,0 +1,306 @@
+benchmark://cbench-v1
+benchmark://anghabench-v1
+benchmark://blas-v0
+benchmark://chstone-v0
+benchmark://clgen-v0
+benchmark://github-v0
+benchmark://linux-v0
+benchmark://mibench-v0
+benchmark://npb-v0
+benchmark://opencv-v0
+benchmark://poj104-v1
+benchmark://tensorflow-v0
+generator://csmith-v0
+generator://llvm-stress-v0
+Running Benchmark: benchmark://chstone-v0/jpeg
+Episode length: 5
+Population Size: 10
+Generation Count: 15
+Mutation Rate: 0.1
+Crossover Rate: 0.8
+Iterations: 3
+Observations: Runtime, IR Instruction Count, Autophase Instruction Count
+Action space: ['-add-discriminators', '-adce', '-loop-unroll', '-loop-unswitch', '-loop-vectorize', '-aggressive-instcombine', '-alignment-from-assumptions', '-always-inline', '-argpromotion', '-attributor', '-barrier', '-bdce', '-loop-instsimplify', '-break-crit-edges', '-simplifycfg', '-dce', '-called-value-propagation', '-die', '-canonicalize-aliases', '-consthoist', '-constmerge', '-constprop', '-coro-cleanup', '-coro-early', '-coro-elide', '-coro-split', '-correlated-propagation', '-cross-dso-cfi', '-deadargelim', '-dse', '-reg2mem', '-div-rem-pairs', '-early-cse-memssa', '-elim-avail-extern', '-ee-instrument', '-flattencfg', '-float2int', '-forceattrs', '-inline', '-insert-gcov-profiling', '-gvn-hoist', '-gvn', '-globaldce', '-globalopt', '-globalsplit', '-guard-widening', '-hotcoldsplit', '-ipconstprop', '-ipsccp', '-indvars', '-irce', '-infer-address-spaces', '-inferattrs', '-inject-tli-mappings', '-instsimplify', '-instcombine', '-instnamer', '-jump-threading', '-lcssa', '-licm', '-libcalls-shrinkwrap', '-load-store-vectorizer', '-loop-data-prefetch', '-loop-deletion', '-loop-distribute', '-loop-fusion', '-loop-guard-widening', '-loop-idiom', '-loop-interchange', '-loop-load-elim', '-loop-predication', '-loop-reroll', '-loop-rotate', '-loop-simplifycfg', '-loop-simplify', '-loop-sink', '-loop-reduce', '-loop-unroll-and-jam', '-loop-versioning-licm', '-loop-versioning', '-loweratomic', '-lower-constant-intrinsics', '-lower-expect', '-lower-guard-intrinsic', '-lowerinvoke', '-lower-matrix-intrinsics', '-lowerswitch', '-lower-widenable-condition', '-memcpyopt', '-mergefunc', '-mergeicmps', '-mldst-motion', '-sancov', '-name-anon-globals', '-nary-reassociate', '-newgvn', '-pgo-memop-opt', '-partial-inliner', '-partially-inline-libcalls', '-post-inline-ee-instrument', '-functionattrs', '-mem2reg', '-prune-eh', '-reassociate', '-redundant-dbg-inst-elim', '-rpo-functionattrs', '-rewrite-statepoints-for-gc', '-sccp', '-slp-vectorizer', '-sroa', '-scalarizer', '-separate-const-offset-from-gep', '-simple-loop-unswitch', '-sink', '-speculative-execution', '-slsr', '-strip-dead-prototypes', '-strip-debug-declare', '-strip-nondebug', '-strip', '-tailcallelim', '-mergereturn']
+
+Iteration 1  of  3
+Generation 1: Best Fitness = 7.5350
+Generation 2: Best Fitness = 8.0250
+Generation 3: Best Fitness = 8.0250
+Generation 4: Best Fitness = 8.0250
+Generation 5: Best Fitness = 8.1500
+Generation 6: Best Fitness = 8.1500
+Generation 7: Best Fitness = 8.1500
+Generation 8: Best Fitness = 12.4100
+Generation 9: Best Fitness = 12.4100
+Generation 10: Best Fitness = 18.7100
+Generation 11: Best Fitness = 18.7100
+Generation 12: Best Fitness = 18.7750
+Generation 13: Best Fitness = 18.7700
+Generation 14: Best Fitness = 18.7700
+Generation 15: Best Fitness = 18.7700
+Achieved Fitness: 18.775, Optimal Sequence: ['-loop-vectorize', '-newgvn', '-nary-reassociate', '-newgvn', '-mem2reg']
+Iteration 2  of  3
+Generation 1: Best Fitness = 29.2300
+Generation 2: Best Fitness = 34.8300
+Generation 3: Best Fitness = 34.8300
+Generation 4: Best Fitness = 34.8300
+Generation 5: Best Fitness = 34.8300
+Generation 6: Best Fitness = 34.6000
+Generation 7: Best Fitness = 34.8300
+Generation 8: Best Fitness = 34.8300
+Generation 9: Best Fitness = 33.8650
+Generation 10: Best Fitness = 34.6000
+Generation 11: Best Fitness = 34.6000
+Generation 12: Best Fitness = 28.4850
+Generation 13: Best Fitness = 28.4850
+Generation 14: Best Fitness = 28.4850
+Generation 15: Best Fitness = 28.4700
+Achieved Fitness: 34.83, Optimal Sequence: ['-newgvn', '-sroa', '-globalsplit', '-prune-eh', '-gvn']
+Iteration 3  of  3
+Generation 1: Best Fitness = 7.4200
+Generation 2: Best Fitness = 36.8250
+Generation 3: Best Fitness = 36.2250
+Generation 4: Best Fitness = 36.8250
+Generation 5: Best Fitness = 36.8250
+Generation 6: Best Fitness = 36.8250
+Generation 7: Best Fitness = 36.2250
+Generation 8: Best Fitness = 36.2250
+Generation 9: Best Fitness = 36.2250
+Generation 10: Best Fitness = 36.8250
+Generation 11: Best Fitness = 36.4350
+Generation 12: Best Fitness = 36.4350
+Generation 13: Best Fitness = 36.6550
+Generation 14: Best Fitness = 35.5850
+Generation 15: Best Fitness = 35.5850
+Achieved Fitness: 36.825, Optimal Sequence: ['-sroa', '-instcombine', '-loop-deletion', '-loop-simplifycfg', '-coro-split']
+
+Genetic Algorithm Performance Review w/ Multiple Iterations
+Algorthm Fitness Results: [18.775, 34.83, 36.825]
+
+Best Fitness: 36.825
+
+Avg Fitness: 30.143333333333334
+
+Worst Fitness: 18.775
+
+Best Inviduals: [['-loop-vectorize', '-newgvn', '-nary-reassociate', '-newgvn', '-mem2reg'], ['-newgvn', '-sroa', '-globalsplit', '-prune-eh', '-gvn'], ['-sroa', '-instcombine', '-loop-deletion', '-loop-simplifycfg', '-coro-split']]
+--------------------------------------
+Running Benchmark: benchmark://chstone-v0/blowfish
+Episode length: 5
+Population Size: 10
+Generation Count: 15
+Mutation Rate: 0.1
+Crossover Rate: 0.8
+Iterations: 3
+Observations: Runtime, IR Instruction Count, Autophase Instruction Count
+Action space: ['-add-discriminators', '-adce', '-loop-unroll', '-loop-unswitch', '-loop-vectorize', '-aggressive-instcombine', '-alignment-from-assumptions', '-always-inline', '-argpromotion', '-attributor', '-barrier', '-bdce', '-loop-instsimplify', '-break-crit-edges', '-simplifycfg', '-dce', '-called-value-propagation', '-die', '-canonicalize-aliases', '-consthoist', '-constmerge', '-constprop', '-coro-cleanup', '-coro-early', '-coro-elide', '-coro-split', '-correlated-propagation', '-cross-dso-cfi', '-deadargelim', '-dse', '-reg2mem', '-div-rem-pairs', '-early-cse-memssa', '-elim-avail-extern', '-ee-instrument', '-flattencfg', '-float2int', '-forceattrs', '-inline', '-insert-gcov-profiling', '-gvn-hoist', '-gvn', '-globaldce', '-globalopt', '-globalsplit', '-guard-widening', '-hotcoldsplit', '-ipconstprop', '-ipsccp', '-indvars', '-irce', '-infer-address-spaces', '-inferattrs', '-inject-tli-mappings', '-instsimplify', '-instcombine', '-instnamer', '-jump-threading', '-lcssa', '-licm', '-libcalls-shrinkwrap', '-load-store-vectorizer', '-loop-data-prefetch', '-loop-deletion', '-loop-distribute', '-loop-fusion', '-loop-guard-widening', '-loop-idiom', '-loop-interchange', '-loop-load-elim', '-loop-predication', '-loop-reroll', '-loop-rotate', '-loop-simplifycfg', '-loop-simplify', '-loop-sink', '-loop-reduce', '-loop-unroll-and-jam', '-loop-versioning-licm', '-loop-versioning', '-loweratomic', '-lower-constant-intrinsics', '-lower-expect', '-lower-guard-intrinsic', '-lowerinvoke', '-lower-matrix-intrinsics', '-lowerswitch', '-lower-widenable-condition', '-memcpyopt', '-mergefunc', '-mergeicmps', '-mldst-motion', '-sancov', '-name-anon-globals', '-nary-reassociate', '-newgvn', '-pgo-memop-opt', '-partial-inliner', '-partially-inline-libcalls', '-post-inline-ee-instrument', '-functionattrs', '-mem2reg', '-prune-eh', '-reassociate', '-redundant-dbg-inst-elim', '-rpo-functionattrs', '-rewrite-statepoints-for-gc', '-sccp', '-slp-vectorizer', '-sroa', '-scalarizer', '-separate-const-offset-from-gep', '-simple-loop-unswitch', '-sink', '-speculative-execution', '-slsr', '-strip-dead-prototypes', '-strip-debug-declare', '-strip-nondebug', '-strip', '-tailcallelim', '-mergereturn']
+
+Iteration 1  of  3
+Generation 1: Best Fitness = 9.7800
+Generation 2: Best Fitness = 9.7800
+Generation 3: Best Fitness = 11.6150
+Generation 4: Best Fitness = 11.6150
+Generation 5: Best Fitness = 11.6150
+Generation 6: Best Fitness = 11.6150
+Generation 7: Best Fitness = 11.6150
+Generation 8: Best Fitness = 11.6150
+Generation 9: Best Fitness = 11.6150
+Generation 10: Best Fitness = 11.6450
+Generation 11: Best Fitness = 12.2400
+Generation 12: Best Fitness = 11.6450
+Generation 13: Best Fitness = 11.6450
+Generation 14: Best Fitness = 16.9200
+Generation 15: Best Fitness = 17.2500
+Achieved Fitness: 17.25, Optimal Sequence: ['-aggressive-instcombine', '-sroa', '-loop-load-elim', '-lower-widenable-condition', '-ipsccp']
+Iteration 2  of  3
+Generation 1: Best Fitness = 7.5950
+Generation 2: Best Fitness = 7.5950
+Generation 3: Best Fitness = 13.3250
+Generation 4: Best Fitness = 13.3250
+Generation 5: Best Fitness = 14.6400
+Generation 6: Best Fitness = 13.3750
+Generation 7: Best Fitness = 13.9700
+Generation 8: Best Fitness = 14.6400
+Generation 9: Best Fitness = 14.6600
+Generation 10: Best Fitness = 16.8150
+Generation 11: Best Fitness = 18.4150
+Generation 12: Best Fitness = 16.8350
+Generation 13: Best Fitness = 16.8350
+Generation 14: Best Fitness = 15.9050
+Generation 15: Best Fitness = 15.9050
+Achieved Fitness: 18.415, Optimal Sequence: ['-gvn', '-newgvn', '-instcombine', '-sroa', '-infer-address-spaces']
+Iteration 3  of  3
+Generation 1: Best Fitness = 12.6900
+Generation 2: Best Fitness = 12.6900
+Generation 3: Best Fitness = 12.7900
+Generation 4: Best Fitness = 12.7650
+Generation 5: Best Fitness = 12.7900
+Generation 6: Best Fitness = 12.7900
+Generation 7: Best Fitness = 12.7900
+Generation 8: Best Fitness = 12.8300
+Generation 9: Best Fitness = 12.7900
+Generation 10: Best Fitness = 13.1050
+Generation 11: Best Fitness = 13.1050
+Generation 12: Best Fitness = 13.1050
+Generation 13: Best Fitness = 12.7900
+Generation 14: Best Fitness = 12.7900
+Generation 15: Best Fitness = 12.8150
+Achieved Fitness: 13.105, Optimal Sequence: ['-loop-simplify', '-loop-simplifycfg', '-mem2reg', '-loop-unswitch', '-instcombine']
+
+Genetic Algorithm Performance Review w/ Multiple Iterations
+Algorthm Fitness Results: [17.25, 18.415, 13.105]
+
+Best Fitness: 18.415
+
+Avg Fitness: 16.256666666666668
+
+Worst Fitness: 13.105
+
+Best Inviduals: [['-aggressive-instcombine', '-sroa', '-loop-load-elim', '-lower-widenable-condition', '-ipsccp'], ['-gvn', '-newgvn', '-instcombine', '-sroa', '-infer-address-spaces'], ['-loop-simplify', '-loop-simplifycfg', '-mem2reg', '-loop-unswitch', '-instcombine']]
+--------------------------------------
+Running Benchmark: benchmark://chstone-v0/motion
+Episode length: 5
+Population Size: 10
+Generation Count: 15
+Mutation Rate: 0.1
+Crossover Rate: 0.8
+Iterations: 3
+Observations: Runtime, IR Instruction Count, Autophase Instruction Count
+Action space: ['-add-discriminators', '-adce', '-loop-unroll', '-loop-unswitch', '-loop-vectorize', '-aggressive-instcombine', '-alignment-from-assumptions', '-always-inline', '-argpromotion', '-attributor', '-barrier', '-bdce', '-loop-instsimplify', '-break-crit-edges', '-simplifycfg', '-dce', '-called-value-propagation', '-die', '-canonicalize-aliases', '-consthoist', '-constmerge', '-constprop', '-coro-cleanup', '-coro-early', '-coro-elide', '-coro-split', '-correlated-propagation', '-cross-dso-cfi', '-deadargelim', '-dse', '-reg2mem', '-div-rem-pairs', '-early-cse-memssa', '-elim-avail-extern', '-ee-instrument', '-flattencfg', '-float2int', '-forceattrs', '-inline', '-insert-gcov-profiling', '-gvn-hoist', '-gvn', '-globaldce', '-globalopt', '-globalsplit', '-guard-widening', '-hotcoldsplit', '-ipconstprop', '-ipsccp', '-indvars', '-irce', '-infer-address-spaces', '-inferattrs', '-inject-tli-mappings', '-instsimplify', '-instcombine', '-instnamer', '-jump-threading', '-lcssa', '-licm', '-libcalls-shrinkwrap', '-load-store-vectorizer', '-loop-data-prefetch', '-loop-deletion', '-loop-distribute', '-loop-fusion', '-loop-guard-widening', '-loop-idiom', '-loop-interchange', '-loop-load-elim', '-loop-predication', '-loop-reroll', '-loop-rotate', '-loop-simplifycfg', '-loop-simplify', '-loop-sink', '-loop-reduce', '-loop-unroll-and-jam', '-loop-versioning-licm', '-loop-versioning', '-loweratomic', '-lower-constant-intrinsics', '-lower-expect', '-lower-guard-intrinsic', '-lowerinvoke', '-lower-matrix-intrinsics', '-lowerswitch', '-lower-widenable-condition', '-memcpyopt', '-mergefunc', '-mergeicmps', '-mldst-motion', '-sancov', '-name-anon-globals', '-nary-reassociate', '-newgvn', '-pgo-memop-opt', '-partial-inliner', '-partially-inline-libcalls', '-post-inline-ee-instrument', '-functionattrs', '-mem2reg', '-prune-eh', '-reassociate', '-redundant-dbg-inst-elim', '-rpo-functionattrs', '-rewrite-statepoints-for-gc', '-sccp', '-slp-vectorizer', '-sroa', '-scalarizer', '-separate-const-offset-from-gep', '-simple-loop-unswitch', '-sink', '-speculative-execution', '-slsr', '-strip-dead-prototypes', '-strip-debug-declare', '-strip-nondebug', '-strip', '-tailcallelim', '-mergereturn']
+
+Iteration 1  of  3
+Generation 1: Best Fitness = 3.6350
+Generation 2: Best Fitness = 3.6350
+Generation 3: Best Fitness = 3.6350
+Generation 4: Best Fitness = 3.6450
+Generation 5: Best Fitness = 3.6450
+Generation 6: Best Fitness = 3.6450
+Generation 7: Best Fitness = 3.6450
+Generation 8: Best Fitness = 3.6450
+Generation 9: Best Fitness = 3.6450
+Generation 10: Best Fitness = 3.6450
+Generation 11: Best Fitness = 4.8500
+Generation 12: Best Fitness = 3.6450
+Generation 13: Best Fitness = 3.6700
+Generation 14: Best Fitness = 10.9200
+Generation 15: Best Fitness = 10.9200
+Achieved Fitness: 10.920000000000002, Optimal Sequence: ['-sroa', '-scalarizer', '-newgvn', '-ee-instrument', '-reassociate']
+Iteration 2  of  3
+Generation 1: Best Fitness = 4.4600
+Generation 2: Best Fitness = 4.5800
+Generation 3: Best Fitness = 4.5800
+Generation 4: Best Fitness = 4.5800
+Generation 5: Best Fitness = 4.5800
+Generation 6: Best Fitness = 4.5800
+Generation 7: Best Fitness = 4.5800
+Generation 8: Best Fitness = 4.5800
+Generation 9: Best Fitness = 4.6850
+Generation 10: Best Fitness = 4.5800
+Generation 11: Best Fitness = 4.6450
+Generation 12: Best Fitness = 4.9500
+Generation 13: Best Fitness = 4.8600
+Generation 14: Best Fitness = 4.8600
+Generation 15: Best Fitness = 4.8600
+Achieved Fitness: 4.949999999999999, Optimal Sequence: ['-attributor', '-newgvn', '-rpo-functionattrs', '-dse', '-div-rem-pairs']
+Iteration 3  of  3
+Generation 1: Best Fitness = 9.1100
+Generation 2: Best Fitness = 9.4200
+Generation 3: Best Fitness = 10.4150
+Generation 4: Best Fitness = 10.4150
+Generation 5: Best Fitness = 9.4200
+Generation 6: Best Fitness = 9.4200
+Generation 7: Best Fitness = 9.4200
+Generation 8: Best Fitness = 9.4650
+Generation 9: Best Fitness = 9.4200
+Generation 10: Best Fitness = 9.4200
+Generation 11: Best Fitness = 9.4200
+Generation 12: Best Fitness = 9.4200
+Generation 13: Best Fitness = 9.4200
+Generation 14: Best Fitness = 9.4200
+Generation 15: Best Fitness = 9.4200
+Achieved Fitness: 10.415000000000001, Optimal Sequence: ['-newgvn', '-sroa', '-coro-elide', '-barrier', '-slp-vectorizer']
+
+Genetic Algorithm Performance Review w/ Multiple Iterations
+Algorthm Fitness Results: [10.920000000000002, 4.949999999999999, 10.415000000000001]
+
+Best Fitness: 10.920000000000002
+
+Avg Fitness: 8.761666666666667
+
+Worst Fitness: 4.949999999999999
+
+Best Inviduals: [['-sroa', '-scalarizer', '-newgvn', '-ee-instrument', '-reassociate'], ['-attributor', '-newgvn', '-rpo-functionattrs', '-dse', '-div-rem-pairs'], ['-newgvn', '-sroa', '-coro-elide', '-barrier', '-slp-vectorizer']]
+--------------------------------------
+Running Benchmark: benchmark://chstone-v0/gsm
+Episode length: 5
+Population Size: 10
+Generation Count: 15
+Mutation Rate: 0.1
+Crossover Rate: 0.8
+Iterations: 3
+Observations: Runtime, IR Instruction Count, Autophase Instruction Count
+Action space: ['-add-discriminators', '-adce', '-loop-unroll', '-loop-unswitch', '-loop-vectorize', '-aggressive-instcombine', '-alignment-from-assumptions', '-always-inline', '-argpromotion', '-attributor', '-barrier', '-bdce', '-loop-instsimplify', '-break-crit-edges', '-simplifycfg', '-dce', '-called-value-propagation', '-die', '-canonicalize-aliases', '-consthoist', '-constmerge', '-constprop', '-coro-cleanup', '-coro-early', '-coro-elide', '-coro-split', '-correlated-propagation', '-cross-dso-cfi', '-deadargelim', '-dse', '-reg2mem', '-div-rem-pairs', '-early-cse-memssa', '-elim-avail-extern', '-ee-instrument', '-flattencfg', '-float2int', '-forceattrs', '-inline', '-insert-gcov-profiling', '-gvn-hoist', '-gvn', '-globaldce', '-globalopt', '-globalsplit', '-guard-widening', '-hotcoldsplit', '-ipconstprop', '-ipsccp', '-indvars', '-irce', '-infer-address-spaces', '-inferattrs', '-inject-tli-mappings', '-instsimplify', '-instcombine', '-instnamer', '-jump-threading', '-lcssa', '-licm', '-libcalls-shrinkwrap', '-load-store-vectorizer', '-loop-data-prefetch', '-loop-deletion', '-loop-distribute', '-loop-fusion', '-loop-guard-widening', '-loop-idiom', '-loop-interchange', '-loop-load-elim', '-loop-predication', '-loop-reroll', '-loop-rotate', '-loop-simplifycfg', '-loop-simplify', '-loop-sink', '-loop-reduce', '-loop-unroll-and-jam', '-loop-versioning-licm', '-loop-versioning', '-loweratomic', '-lower-constant-intrinsics', '-lower-expect', '-lower-guard-intrinsic', '-lowerinvoke', '-lower-matrix-intrinsics', '-lowerswitch', '-lower-widenable-condition', '-memcpyopt', '-mergefunc', '-mergeicmps', '-mldst-motion', '-sancov', '-name-anon-globals', '-nary-reassociate', '-newgvn', '-pgo-memop-opt', '-partial-inliner', '-partially-inline-libcalls', '-post-inline-ee-instrument', '-functionattrs', '-mem2reg', '-prune-eh', '-reassociate', '-redundant-dbg-inst-elim', '-rpo-functionattrs', '-rewrite-statepoints-for-gc', '-sccp', '-slp-vectorizer', '-sroa', '-scalarizer', '-separate-const-offset-from-gep', '-simple-loop-unswitch', '-sink', '-speculative-execution', '-slsr', '-strip-dead-prototypes', '-strip-debug-declare', '-strip-nondebug', '-strip', '-tailcallelim', '-mergereturn']
+
+Iteration 1  of  3
+Generation 1: Best Fitness = 12.9200
+Generation 2: Best Fitness = 15.8300
+Generation 3: Best Fitness = 15.8300
+Generation 4: Best Fitness = 12.9200
+Generation 5: Best Fitness = 12.9200
+Generation 6: Best Fitness = 15.0200
+Generation 7: Best Fitness = 17.4550
+Generation 8: Best Fitness = 15.0200
+Generation 9: Best Fitness = 16.0700
+Generation 10: Best Fitness = 16.1500
+Generation 11: Best Fitness = 18.2500
+Generation 12: Best Fitness = 16.1500
+Generation 13: Best Fitness = 18.2500
+Generation 14: Best Fitness = 18.2500
+Generation 15: Best Fitness = 18.2500
+Achieved Fitness: 18.25, Optimal Sequence: ['-mem2reg', '-mem2reg', '-cross-dso-cfi', '-gvn', '-globalsplit']
+Iteration 2  of  3
+Generation 1: Best Fitness = 6.4600
+Generation 2: Best Fitness = 6.5100
+Generation 3: Best Fitness = 6.5100
+Generation 4: Best Fitness = 6.5100
+Generation 5: Best Fitness = 9.8950
+Generation 6: Best Fitness = 12.4850
+Generation 7: Best Fitness = 12.4850
+Generation 8: Best Fitness = 9.8950
+Generation 9: Best Fitness = 9.8950
+Generation 10: Best Fitness = 9.8950
+Generation 11: Best Fitness = 12.0900
+Generation 12: Best Fitness = 12.8900
+Generation 13: Best Fitness = 12.8900
+Generation 14: Best Fitness = 12.8900
+Generation 15: Best Fitness = 12.8900
+Achieved Fitness: 12.89, Optimal Sequence: ['-flattencfg', '-early-cse-memssa', '-newgvn', '-sroa', '-tailcallelim']
+Iteration 3  of  3
+Generation 1: Best Fitness = 6.5250
+Generation 2: Best Fitness = 6.5250
+Generation 3: Best Fitness = 6.5250
+Generation 4: Best Fitness = 6.5250
+Generation 5: Best Fitness = 6.5250
+Generation 6: Best Fitness = 7.5750
+Generation 7: Best Fitness = 7.5750
+Generation 8: Best Fitness = 7.5750
+Generation 9: Best Fitness = 6.5450
+Generation 10: Best Fitness = 6.5450
+Generation 11: Best Fitness = 6.5250
+Generation 12: Best Fitness = 6.5250
+Generation 13: Best Fitness = 6.6150
+Generation 14: Best Fitness = 6.5250
+Generation 15: Best Fitness = 6.5250
+Achieved Fitness: 7.575000000000001, Optimal Sequence: ['-instcombine', '-instcombine', '-jump-threading', '-flattencfg', '-libcalls-shrinkwrap']
+
+Genetic Algorithm Performance Review w/ Multiple Iterations
+Algorthm Fitness Results: [18.25, 12.89, 7.575000000000001]
+
+Best Fitness: 18.25
+
+Avg Fitness: 12.905000000000001
+
+Worst Fitness: 7.575000000000001
+
+Best Inviduals: [['-mem2reg', '-mem2reg', '-cross-dso-cfi', '-gvn', '-globalsplit'], ['-flattencfg', '-early-cse-memssa', '-newgvn', '-sroa', '-tailcallelim'], ['-instcombine', '-instcombine', '-jump-threading', '-flattencfg', '-libcalls-shrinkwrap']]
+--------------------------------------

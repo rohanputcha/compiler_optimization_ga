@@ -149,8 +149,8 @@ def evaluate_fitness(env, individual: List[str]) -> float:
     env.reset()
     total_reward = 0
     initial_ic = env.observation["IrInstructionCount"]
-    initial_rt = env.observation["Runtime"][0]
-    initial_auto = env.observation["Autophase"][51]
+    initial_rt = 0 if len(env.observation["Runtime"]) == 0 else env.observation["Runtime"][0]
+    initial_auto =  env.observation["Autophase"][51]
     for action in individual:
         action_index = env.action_space.flags.index(action)
         observation, reward, done, info = env.step(action_index)
@@ -163,7 +163,7 @@ def evaluate_fitness(env, individual: List[str]) -> float:
 
 def rewards(env, initial_rt, initial_ic, inital_auto):
     after_ic = env.observation["IrInstructionCount"]
-    after_rt = env.observation["Runtime"][-1]
+    after_rt = 0 if len(env.observation["Runtime"]) == 0 else env.observation["Runtime"][-1]
     runtime = initial_rt - after_rt
     if runtime < 0:
         runtime = 0
@@ -225,13 +225,15 @@ def genetic_algorithm(env):
 def main(argv):
     del argv
     env = compiler_gym.make("llvm-v0")
-    
+    for dataset in env.datasets:
+        print(dataset.name)
     #without benchmarks
-    #env.reset() 
+    env.reset() 
 
     #if using benchmarks
     #benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
-    benchmarks = ["benchmark://cbench-v1/crc32"] #add additional
+   # benchmarks = ["benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/motion", "benchmark://mibench-v1/jpeg", "benchmark://mibench-v1/sphinx", "benchmark://mibench-v1/qsort"] #add additional
+    benchmarks = ["benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/motion", "benchmark://chstone-v0/gsm"] #add additional
 
     for benchmark in benchmarks:
         print(f"Running Benchmark: {benchmark}")
