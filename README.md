@@ -142,5 +142,6 @@ pip install -r requirements.txt
 
 - Ensure you have **Python 3.8 or higher** installed.
 - Refer to the [CompilerGym documentation](https://compiler.ai/) for more information on available benchmarks and environments.
+- CompilerGym may randomly abort when using Mac OSX. Our code runs better on a Linux operating system.
 
 ---
