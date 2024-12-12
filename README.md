@@ -88,7 +88,7 @@ benchmark = "cbench-v1/qsort"  # Example benchmark
 env.reset(benchmark=benchmark)
 ```
 
-You can change the `benchmark` variable to another supported benchmark from the CompilerGym suite.
+You can change the `benchmark` variable to another supported benchmark from the CompilerGym suite. See our report for which benchmarks we have already run.
 
 ### Example Code for `compiler_gym_rl.py`
 
