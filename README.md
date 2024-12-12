@@ -144,5 +144,3 @@ pip install -r requirements.txt
 - Refer to the [CompilerGym documentation](https://compiler.ai/) for more information on available benchmarks and environments.
 
 ---
-
-Enjoy optimizing with Genetic Algorithms and Reinforcement Learning! 🚀
