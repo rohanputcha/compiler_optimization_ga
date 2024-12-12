@@ -90,7 +90,7 @@ env.reset(benchmark=benchmark)
 
 You can change the `benchmark` variable to another supported benchmark from the CompilerGym suite. See our report for which benchmarks we have already run.
 
-You may also want to edit compiler_gym_rl.py with the same changes. Modify the `benchmark` string to use different benchmarks based on your needs.
+You may also want to edit `compiler_gym_rl.py` with the same changes. Modify the `benchmark` string to use different benchmarks based on your needs.
 
 ---
 
