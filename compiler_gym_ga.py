@@ -233,7 +233,7 @@ def main(argv):
     #if using benchmarks
     #benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
    # benchmarks = ["benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/motion", "benchmark://mibench-v1/jpeg", "benchmark://mibench-v1/sphinx", "benchmark://mibench-v1/qsort"] #add additional
-    benchmarks = ["benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/motion", "benchmark://chstone-v0/gsm"] #add additional
+    benchmarks = ["benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/motion", "benchmark://chstone-v0/gsm"] #add additional
     #benchmarks = ["benchmark://github-v0/1", "benchmark://github-v0/2", "benchmark://github-v0/3", "benchmark://github-v0/4", "benchmark://github-v0/5"]
         
     for benchmark in benchmarks:
