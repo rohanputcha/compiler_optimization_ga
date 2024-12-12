@@ -137,7 +137,7 @@ flags.DEFINE_list(
 )
 flags.DEFINE_integer("population_size", 10, "Number of individuals in the population.")
 flags.DEFINE_integer("generation_count", 100, "Number of generations to evolve.")
-flags.DEFINE_integer("episode_len", 5, "Length of each sequence of optimizations.")
+flags.DEFINE_integer("flag_count", 5, "Length of each sequence of optimizations.")
 flags.DEFINE_float("mutation_rate", .1, "Probability of mutation.")
 flags.DEFINE_float("crossover_rate", .8, "Probability of crossover.")
 flags.DEFINE_integer("iterations", 24, "Training")
@@ -171,13 +171,13 @@ def rewards(env, initial_rt, initial_ic, inital_auto):
     ic = initial_ic - after_ic
     if ic < 0:
         ic = 0
-    ic *= 0.003
+    ic *= 0.3
     after_auto = env.observation["Autophase"][51]
     auto = inital_auto - after_auto
     if auto < 0:
         auto = 0
-    auto *= 0.002
-    combined = runtime + ic + auto
+    auto *= 0.2
+    combined = runtime + (ic + auto) * 0.01
     return combined
 
 def crossover(parent1: List[str], parent2: List[str]) -> Tuple[List[str], List[str]]:
@@ -197,7 +197,7 @@ def mutate(individual: List[str]) -> List[str]:
     return mutated_individual
 
 def genetic_algorithm(env):
-    population = [random.choices(FLAGS.flags, k=FLAGS.episode_len) for _ in range(FLAGS.population_size)]
+    population = [random.choices(FLAGS.flags, k=FLAGS.flag_count) for _ in range(FLAGS.population_size)]
     best_fitness = float('-inf')
     best_individual = None
     for generation in range(FLAGS.generation_count):
@@ -231,16 +231,14 @@ def main(argv):
     env.reset() 
 
     #if using benchmarks
-    #benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
-   # benchmarks = ["benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/motion", "benchmark://mibench-v1/jpeg", "benchmark://mibench-v1/sphinx", "benchmark://mibench-v1/qsort"] #add additional
-    benchmarks = ["benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/motion", "benchmark://chstone-v0/gsm"] #add additional
-    #benchmarks = ["benchmark://github-v0/1", "benchmark://github-v0/2", "benchmark://github-v0/3", "benchmark://github-v0/4", "benchmark://github-v0/5"]
+    benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
+    #benchmarks = ["benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/motion", "benchmark://chstone-v0/gsm"] #add additional
         
     for benchmark in benchmarks:
         print(f"Running Benchmark: {benchmark}")
         env.reset(benchmark=benchmark)
     
-        print(f"Episode length: {FLAGS.episode_len}")
+        print(f"Episode length: {FLAGS.flag_count}")
         print(f"Population Size: {FLAGS.population_size}")
         print(f"Generation Count: {FLAGS.generation_count}")
         print(f"Mutation Rate: {FLAGS.mutation_rate}")

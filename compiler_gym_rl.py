@@ -198,10 +198,14 @@ class HistoryObservation(gym.ObservationWrapper):
         )
         obs=super().reset(*args, **kwargs)
         self.initial_ic = self.env.observation["IrInstructionCount"]
-        self.initial_rt = 0 if len(self.env.observation["Runtime"])  == 0 else self.env.observation["Runtime"][0]
+        # self.initial_rt = 0 if not len(self.env.observation["Runtime"])  == 0 else self.env.observation["Runtime"][0]
+       
+        if self.env.observation["Runtime"] is None:
+            self.initial_rt = 0
+        else:
+            self.initial_rt = 0 if len(self.env.observation["Runtime"])  == 0 else self.env.observation["Runtime"][0]
         self.initial_auto = self.env.observation["Autophase"][51]
-        # print("hello there before", self.env.observation["Runtime"][0])
-
+        
         return obs #super().reset(*args, **kwargs)
 
     def step(self, action: int):
@@ -217,7 +221,12 @@ class HistoryObservation(gym.ObservationWrapper):
         obs, _, done, info = super().step(action)
 
         # Update after-action observations
-        self.after_rt =  0 if len(self.env.observation["Runtime"]) == 0 else self.env.observation["Runtime"][-1]
+        # self.after_rt =  0 if len(self.env.observation["Runtime"]) == 0 else self.env.observation["Runtime"][-1]
+        
+        if self.env.observation["Runtime"] is None:
+            self.after_rt = 0
+        else:
+            self.after_rt = 0 if len(self.env.observation["Runtime"])  == 0 else self.env.observation["Runtime"][0]
         self.after_ic = self.env.observation["IrInstructionCount"]
         self.after_auto = self.env.observation["Autophase"][51]
 
@@ -242,14 +251,14 @@ class HistoryObservation(gym.ObservationWrapper):
         ic = self.initial_ic - self.after_ic
         if ic < 0:
             ic = 0
-        ic *= 0.003
+        ic *= 0.3
        
         #Autophase Instruction
         auto = self.initial_auto - self.after_auto
         if auto < 0:
             auto = 0
-        auto *= 0.002
-        combined = runtime + ic + auto
+        auto *= 0.2
+        combined = runtime + (ic + auto) * 0.01
         
         return combined
         
@@ -303,59 +312,17 @@ def select_action(model, state, exploration_rate=0.0):
     state = torch.from_numpy(state.flatten()).float()
     probs, state_value = model(state)
 
-   
     m = Categorical(probs)
 
-   
     if random.random() < exploration_rate:
         action = torch.tensor(random.randrange(0, len(probs)))
     else:
         action = m.sample()
 
-   
     model.saved_actions.append(SavedAction(m.log_prob(action), state_value))
 
     # The action to take.
     return action.item()
-
-
-# def finish_episode(model, optimizer) -> float:
-#     """The training code. Calculates actor and critic loss and performs backprop."""
-#     R = 0
-#     saved_actions = model.saved_actions
-#     policy_losses = [] 
-#     value_losses = []  
-#     returns = []  
-
-#     for r in model.rewards[::-1]:
-#         R += r
-#         returns.insert(0, R)
-
-   
-#     returns = torch.tensor(returns)
-#     model.moving_mean.next(returns.mean())
-#     model.moving_std.next(returns.std())
-#     returns = (returns - model.moving_mean.value) / (model.moving_std.value + eps)
-
-#     for (log_prob, value), R in zip(saved_actions, returns):
-       
-#         advantage = R - value.item()
-        
-#         policy_losses.append(-log_prob * advantage)
-        
-#         value_losses.append(F.smooth_l1_loss(value, torch.tensor([R])))
-   
-#     optimizer.zero_grad()
-
-
-#     loss = torch.stack(policy_losses).sum() + torch.stack(value_losses).sum()
-#     loss_value = loss.item()
-    
-#     loss.backward()
-#     optimizer.step()
-  
-#     del model.rewards[:]
-#     del model.saved_actions[:]
 
 
 def TrainActorCritic(env):
@@ -386,20 +353,13 @@ def TrainActorCritic(env):
                 break
 
         
-        # loss = finish_episode(model, optimizer)
-        # if loss is None:
-        #     loss =0
         if ep_reward  > max_ep_reward:
-            # max_ep_reward=ep_reward
+            
             best_sequence = sequence
 
-        
         max_ep_reward = max(max_ep_reward, ep_reward)
         avg_reward.next(ep_reward)
-        # avg_loss.next(loss)
         
-
-       
         if (
             episode == 1
             or episode % FLAGS.log_interval == 0
@@ -410,24 +370,19 @@ def TrainActorCritic(env):
                 f"Current reward: {ep_reward:.2f}\t"
                 f"Avg reward: {avg_reward.value:.2f}\t"
                 f"Best reward: {max_ep_reward:.2f}\t",
-                # f"Last loss: {loss:.6f}\t"
-                # f"Avg loss: {avg_loss.value:.6f}\t",
+               
                 flush=True,
             )
     action_names=[FLAGS.flags[int(idx)] for idx in best_sequence] 
     
     print(f"\nBest Sequence: {action_names} and Fitness: {max_ep_reward}")
     print(f"\nFinal performance (avg reward): {max_ep_reward}")
-    # print(f"Final avg reward versus own best: {avg_reward.value - max_ep_reward:.2f}")
     return max_ep_reward, action_names
 
 
 def make_env():
     FLAGS.env = "llvm-v0"
     
-
-    # if not FLAGS.reward:
-    #     FLAGS.reward = "IrInstructionCountOz"
     env = env_from_flags(benchmark=benchmark_from_flags())
     env = ConstrainedCommandline(env, flags=FLAGS.flags)
     env = TimeLimit(env, max_episode_steps=FLAGS.episode_len)
@@ -448,24 +403,18 @@ def main(argv):
         #without benchmark
         # env.reset()
     
-        #benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
-        benchmarks = ["benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/motion", "benchmark://chstone-v0/gsm"] #add additional
-        #benchmarks = ["benchmark://github-v0/1", "benchmark://github-v0/2", "benchmark://github-v0/3", "benchmark://github-v0/4", "benchmark://github-v0/5"]
+        benchmarks = ["benchmark://cbench-v1/crc32","benchmark://cbench-v1/dijkstra","benchmark://cbench-v1/bzip2","benchmark://cbench-v1/jpeg-c"] #add additional
+        #benchmarks = ["benchmark://chstone-v0/jpeg", "benchmark://chstone-v0/blowfish", "benchmark://chstone-v0/motion", "benchmark://chstone-v0/gsm"] #add additional
         for benchmark in benchmarks:
             print(f"Running Benchmark: {benchmark}")
             #if using benchmarks
             benchmark1 = benchmark
             env.reset(benchmark=benchmark1)
 
-            
-
-
-
             print(f"Seed: {FLAGS.seed}")
             print(f"Episode length: {FLAGS.episode_len}")
             print(f"Number of episodes: {FLAGS.episodes_count}")
-            # print(f"Exploration: {FLAGS.exploration:.2%}")
-            # print(f"Learning rate: {FLAGS.learning_rate}")
+            print(f"Exploration: {FLAGS.exploration:.2%}")
             print(f"Observations: Runtime, IR Instruction Count, Autophase Instruction Count")
             print(f"Benchmark: {FLAGS.benchmark}")
             print(f"Action space: {env.action_space}\n")
