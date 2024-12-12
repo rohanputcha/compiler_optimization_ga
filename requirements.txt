@@ -2,3 +2,6 @@ absl_py==2.1.0
 compiler_gym==0.2.5
 gym==0.21.0
 numpy==1.24.0
+scipy==1.13.1
+matplotlib==3.9.2
+torch==2.2.2

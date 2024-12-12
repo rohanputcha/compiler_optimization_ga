@@ -1,0 +1,74 @@
+
+*** Iteration 1 of 3
+Episode 1       Current reward: 0.00    Avg reward: 0.00        Best reward: 0.00
+Episode 4       Current reward: 0.00    Avg reward: 18.27       Best reward: 383.96
+Episode 8       Current reward: 6.14    Avg reward: 15.21       Best reward: 383.96
+Episode 12      Current reward: 0.00    Avg reward: 12.51       Best reward: 383.96
+Episode 16      Current reward: 628.31  Avg reward: 52.03       Best reward: 628.31
+Episode 20      Current reward: 6.88    Avg reward: 43.16       Best reward: 628.31
+Episode 24      Current reward: 4.52    Avg reward: 41.83       Best reward: 628.31
+Episode 28      Current reward: 3.75    Avg reward: 42.06       Best reward: 628.31
+Episode 32      Current reward: 0.00    Avg reward: 49.28       Best reward: 628.31
+Episode 36      Current reward: 2.61    Avg reward: 40.29       Best reward: 628.31
+Episode 40      Current reward: 0.00    Avg reward: 33.18       Best reward: 628.31
+Episode 44      Current reward: 0.00    Avg reward: 43.52       Best reward: 628.31
+Episode 48      Current reward: 0.00    Avg reward: 35.78       Best reward: 628.31
+Episode 52      Current reward: 8.55    Avg reward: 53.26       Best reward: 628.31
+Episode 56      Current reward: 111.47  Avg reward: 59.90       Best reward: 628.31
+Episode 60      Current reward: 353.71  Avg reward: 66.84       Best reward: 628.31
+
+Best Sequence: ['-mem2reg', '-functionattrs', '-loop-unroll-and-jam', '-mergereturn', '-lower-widenable-condition'] and Fitness: 628.3086015000001
+
+Final performance (avg reward): 628.3086015000001
+
+*** Iteration 2 of 3
+Episode 1       Current reward: 0.00    Avg reward: 0.00        Best reward: 0.00
+Episode 4       Current reward: 111.91  Avg reward: 5.60        Best reward: 111.91
+Episode 8       Current reward: 0.00    Avg reward: 9.80        Best reward: 111.91
+Episode 12      Current reward: 0.90    Avg reward: 40.24       Best reward: 506.10
+Episode 16      Current reward: 0.63    Avg reward: 32.81       Best reward: 506.10
+Episode 20      Current reward: 0.00    Avg reward: 62.88       Best reward: 506.10
+Episode 24      Current reward: 0.00    Avg reward: 53.00       Best reward: 506.10
+Episode 28      Current reward: 1.37    Avg reward: 44.09       Best reward: 506.10
+Episode 32      Current reward: 0.00    Avg reward: 35.94       Best reward: 506.10
+Episode 36      Current reward: 356.49  Avg reward: 50.31       Best reward: 506.10
+Episode 40      Current reward: 0.00    Avg reward: 42.00       Best reward: 506.10
+Episode 44      Current reward: 3.57    Avg reward: 34.55       Best reward: 506.10
+Episode 48      Current reward: 0.00    Avg reward: 49.37       Best reward: 506.10
+Episode 52      Current reward: 211.82  Avg reward: 51.61       Best reward: 506.10
+Episode 56      Current reward: 19.57   Avg reward: 46.04       Best reward: 506.10
+Episode 60      Current reward: 0.08    Avg reward: 37.58       Best reward: 506.10
+
+Best Sequence: ['-irce', '-sroa', '-forceattrs', '-insert-gcov-profiling', '-redundant-dbg-inst-elim'] and Fitness: 506.100205
+
+Final performance (avg reward): 506.100205
+
+*** Iteration 3 of 3
+Episode 1       Current reward: 380.15  Avg reward: 380.15      Best reward: 380.15
+Episode 4       Current reward: 130.37  Avg reward: 338.96      Best reward: 380.15
+Episode 8       Current reward: 22.31   Avg reward: 277.68      Best reward: 380.15
+Episode 12      Current reward: 36.94   Avg reward: 228.35      Best reward: 380.15
+Episode 16      Current reward: 0.00    Avg reward: 201.50      Best reward: 380.15
+Episode 20      Current reward: 360.58  Avg reward: 195.73      Best reward: 380.15
+Episode 24      Current reward: 0.00    Avg reward: 160.18      Best reward: 380.15
+Episode 28      Current reward: 0.13    Avg reward: 136.91      Best reward: 380.15
+Episode 32      Current reward: 0.17    Avg reward: 111.52      Best reward: 380.15
+Episode 36      Current reward: 0.07    Avg reward: 104.89      Best reward: 380.15
+Episode 40      Current reward: 634.13  Avg reward: 130.83      Best reward: 634.13
+Episode 44      Current reward: 3.11    Avg reward: 108.88      Best reward: 634.13
+Episode 48      Current reward: 312.93  Avg reward: 107.79      Best reward: 634.13
+Episode 52      Current reward: 0.01    Avg reward: 98.93       Best reward: 634.13
+Episode 56      Current reward: 0.00    Avg reward: 99.52       Best reward: 634.13
+Episode 60      Current reward: 0.00    Avg reward: 107.72      Best reward: 634.13
+
+Best Sequence: ['-mem2reg', '-dce', '-memcpyopt', '-globalopt', '-memcpyopt'] and Fitness: 634.1262025
+
+Final performance (avg reward): 634.1262025
+
+*** Reinforcement Learning Performance Review w/ Multiple Iterations
+Algorthm Fitness: [628.3086015000001, 506.100205, 634.1262025]
+
+Best Fitness: 634.1262025
+Avg Fitness: 589.5116696666666
+Worst Fitness: 506.100205
+Best Inviduals: [['-mem2reg', '-functionattrs', '-loop-unroll-and-jam', '-mergereturn', '-lower-widenable-condition'], ['-irce', '-sroa', '-forceattrs', '-insert-gcov-profiling', '-redundant-dbg-inst-elim'], ['-mem2reg', '-dce', '-memcpyopt', '-globalopt', '-memcpyopt']]
