@@ -90,20 +90,7 @@ env.reset(benchmark=benchmark)
 
 You can change the `benchmark` variable to another supported benchmark from the CompilerGym suite. See our report for which benchmarks we have already run.
 
-### Example Code for `compiler_gym_rl.py`
-
-In `compiler_gym_rl.py`, the benchmark setup might look like:
-
-```python
-from compiler_gym.envs import llvm
-
-# Load a specific benchmark
-env = llvm.make("llvm-v0")
-benchmark = "npb-v0/is"  # Example benchmark
-env.reset(benchmark=benchmark)
-```
-
-Modify the `benchmark` string to use different benchmarks based on your needs.
+You may also want to edit compiler_gym_rl.py with the same changes. Modify the `benchmark` string to use different benchmarks based on your needs.
 
 ---
 
