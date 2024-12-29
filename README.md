@@ -2,6 +2,8 @@
 
 This project explores compiler optimization by leveraging genetic algorithms (GA) and compares the performance with reinforcement learning (RL) techniques inspired by the CompilerGym framework. The goal is to improve loop vectorization and locality through automated compiler optimizations.
 
+See `report.pdf` for more information about the project's findings.
+
 ## Table of Contents
 
 1. [Getting Started](#getting-started)
